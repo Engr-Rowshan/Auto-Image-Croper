@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Directory to watch:" HorizontalAlignment="Left" Margin="19,15,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnBrowse" Content="Browse" HorizontalAlignment="Left" Margin="351,19,0,0" VerticalAlignment="Top" Width="75" Click="btnBrowse_Click"/>
+        <TextBox x:Name="txtWatchPath" HorizontalAlignment="Left" Height="20" Margin="131,19,0,0" TextWrapping="Wrap" Text="Please Select a directory" VerticalAlignment="Top" Width="215"/>
+        <Button x:Name="btnWatch" Content="Start Watch" HorizontalAlignment="Left" Margin="351,48,0,0" VerticalAlignment="Top" Width="76" IsEnabled="False" Click="btnWatch_Click"/>
+        <Label Content="Status&#xD;&#xA;" HorizontalAlignment="Left" Margin="19,45,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label x:Name="lblStatus" Content="Status&#xA;" HorizontalAlignment="Left" Margin="131,45,0,0" VerticalAlignment="Top" Height="23"/>
+        <ListBox x:Name="lstLog" HorizontalAlignment="Left" Height="179" Margin="19,92,0,0" VerticalAlignment="Top" Width="407"/>
+
     </Grid>
 </Window>
