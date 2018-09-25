@@ -14,6 +14,11 @@
         <Label Content="Status&#xD;&#xA;" HorizontalAlignment="Left" Margin="19,45,0,0" VerticalAlignment="Top" Height="23"/>
         <Label x:Name="lblStatus" Content="Status&#xA;" HorizontalAlignment="Left" Margin="131,45,0,0" VerticalAlignment="Top" Height="23"/>
         <ListBox x:Name="lstLog" HorizontalAlignment="Left" Height="179" Margin="19,92,0,0" VerticalAlignment="Top" Width="407"/>
+        <Canvas x:Name="cnvPhoto" HorizontalAlignment="Left" Height="252" Margin="448,19,0,0" VerticalAlignment="Top" Width="334" RenderTransformOrigin="0.567,0.511" Background="#FFFB9696">
+            <Image x:Name="imgImage" Height="252" Width="334" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0,0"/>
+        
+        </Canvas>
+        <Button x:Name="btnTest" Content="Test" HorizontalAlignment="Left" Margin="461,288,0,0" VerticalAlignment="Top" Width="75" Click="btnTest_Click"/>
 
     </Grid>
 </Window>

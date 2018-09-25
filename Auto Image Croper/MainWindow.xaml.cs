@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Forms;
 using System.IO;
+using Path = System.IO.Path;
 
 namespace Auto_Image_Croper
 {
@@ -110,8 +111,16 @@ namespace Auto_Image_Croper
         {
             this.Dispatcher.Invoke(() =>
             {
+                
                 lstLog.Items.Add("New file added: " + e.Name);
             });
+        }
+
+        private void btnTest_Click(object sender, RoutedEventArgs e)
+        {
+
+            imgImage.Source = new BitmapImage(new Uri(@"C:\Users\Rowshan\Desktop\Test\zia.jpg"));       
+             
         }
     }
 }
